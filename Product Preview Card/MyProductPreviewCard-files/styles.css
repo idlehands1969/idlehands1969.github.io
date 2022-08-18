@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background-color: #f2ebe3;
+    width: 100%;
+}
+
+.mblImg {
+    display: none;
+}
+
+.card {
+    width: 720px;
+    overflow: hidden;
+}
+
+.card-title {
+    float: left;
+}
+
+.spcTxt {
+}
+
+img {
+    object-fit: cover;
+}
+
+.right-side {
+    height: 100%;
+    width: 15rem;
+}
+
+h1 {
+    font-family: Fraunces;
+}
+
+.ttlClr {
+    color: #3c8067;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    margin-right: 9px;
+}
+
+.text-decoration-line-through {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.btn-default {
+    background-color: #3c8067;
+    color: #fff;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #295344;
+    color: #fff;
+}
+
+.btn-lg {
+    width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 375px;
+    }
+    img {
+        height: 500px;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .dsktpImg {
+        display: none;
+    }
+    .mblImg {
+        display: block;
+    }
+    .card-body {
+        margin-left: 10px;
+    }
+}
+    
