@@ -1,53 +1,63 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    margin-bottom: 500px;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%); 
+* {
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    font-size: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    font-size: 100%;
     font-family: Outfit, sans-serif;
-    background: #D6E2EF;
+    background: hsl(212, 45%, 89%);
 }
 
-#box {
-    background: #D6E2EF;
-    display:inline-block;
+.container {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#card {
-    overflow: hidden;
-    width: 300px;
-    margin: 50px auto;
-    background-color: white;
-    border-radius: 3%;
+.content {
+    background-color: hsl(0, 0%, 100%);
+    width: 19em;
+    border-radius: 5%;
 }
 
-#img {
+.qrcode {
     width: 100%;
-    height: auto;
-    padding: 20px;
-    border-radius: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9%;
+    padding: 5% 5% 0;
 }
 
-.p1 {
-    font-size: 1.2rem;
-    font-weight: 900;
+.qr-code-text {
     text-align: center;
-    padding: 0px 10px;
+    padding: 0 8% 5%;
 }
 
-.p2 {
-    text-align: center;
-    padding: 0px 20px;
-    margin-bottom: 30px;
+.qrheading {
+    color: hsl(218, 44%, 22%);
+    font-size: 1.3em;
+    font-weight: 700;
 }
+
+.qrtext {
+    color: hsl(220, 15%, 55%);
+    font-size: 0.95em;
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 5%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
