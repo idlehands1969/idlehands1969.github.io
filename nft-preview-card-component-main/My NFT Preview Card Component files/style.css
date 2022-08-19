@@ -8,6 +8,7 @@ body {
     font-size: 100%;
     width: 100vw;
     height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,33 +19,38 @@ body {
     background: hsl(216, 50%, 16%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 3%;
-    overflow: hidden;
     font-size: 18px;
     width: 350px;
+    padding: 20px;
     }
 
 .card-img1 {
-    width: 100%;
-    height: auto;
-    padding: 8%;
-    border-radius: 10%;
-}
-
-.card-body {
-    margin: 0 auto;
-    padding: 10%;
+    border-radius: 4%;
 }
 
 .card-title {
     color: hsl(0, 0%, 100%);
-    margin: 0 auto;
 }
 
 .card-text {
     color: hsl(215, 51%, 70%);
+}
+
+.smallFlex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.smallFlex-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .price {
@@ -59,17 +65,17 @@ body {
     width: 2rem;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 100%;
+    margin-top: 5%;
 }
 
-.smallFlex {
+.smallFlex2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto 5%;
     border-top: 1px solid hsl(215, 77%, 78%);
-    padding-top: 1rem;
 }
 
 .creation {
@@ -84,4 +90,15 @@ body {
 .creator-bold {
     font-weight: 600;
     color:hsl(0, 0%, 100%)
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.attribution a {
+    color: hsl(215, 51%, 70%);
+    font-weight: 600;
 }
