@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     border-radius: 3%;
     font-size: 18px;
-    width: 350px;
+    width: 90%;
     padding: 20px;
     }
 
@@ -76,8 +76,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 90%;
-    margin: 25px auto 10px;
+    margin: 25px auto 0px;
     border-top: 1px solid hsl(215, 77%, 78%, 0.2);
+}
+
+.smallflex2-item {
+    margin-top: 18px;
 }
 
 .avatar {
@@ -110,4 +114,11 @@ body {
 .attribution a {
     color: hsl(215, 51%, 70%);
     font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
