@@ -1,0 +1,81 @@
+/* MEDIA QUERY 768PX */
+
+
+@media (min-width: 768px) {
+
+/* DEFINE VARIABLES */    
+    :root {
+        --media-width: 768px;
+        --padding-inline: 39px;
+        --img-width: 640.71px;
+        --img-height: 640px;
+        --card-padding-left: 7px;
+        --card-width: 339px;
+    }
+
+    header {
+        width: 689px;
+        padding-top: 24px;
+    }
+
+/* HERO */
+
+    .hero-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: hidden;
+        padding-right: 0px; /* keeps img up against the side of the container */
+    }
+    .hero-text {
+        width: 398px;
+    }
+    .hero-text > h1 {
+        width: 326px;
+        margin-bottom: 25px;
+    }
+    .hero-text > p {
+        width: 398px;
+        margin-bottom: 24px;
+    }
+    .mobile-hero-img, .desktop-hero-img {
+        display: none;
+    }
+    .tablet-hero-img {
+        display: block;
+        min-width: var(--img-width);
+        max-width: 991px;
+        position: relative;
+        top: -92.13px;
+        left: -25px;
+
+    }
+
+/* CARD SECTION */
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 86px;
+    }
+    .courseContainer {
+        height: var(--card-height);
+        padding-top: 56px;
+        padding-left: 32px;
+    }
+    .course {
+        width: 286px;
+        height: 120px;
+        color: var(--white);
+    }
+    .card {
+        border-radius: 10px;
+        padding-bottom: 32px;
+        margin-bottom: 48px;
+        padding-inline: 0px;
+    }
+
+}

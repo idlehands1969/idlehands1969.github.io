@@ -1,0 +1,101 @@
+/* MEDIA QUERY 1440PX */
+
+@media (min-width: 1440px) {
+/* DEFINE VARIABLES */    
+    :root {
+        --media-width: 1440px;
+        --padding-inline: 165px;
+        --card-padding-left: 32px;
+        --img-width: 991.63px;
+        --img-height: 936.92px;
+        --course-height: 120px;
+        --card-width: 350px;
+        --card-height: 322px;
+        --card-padding-left: 32px;
+
+        --xl-head-font-size: 56px;
+        --xl-head-line-height: 70.56px;
+
+        --l-head-font-size: 32px;
+        --l-head-line-height: 40px;
+    
+        --m-head-font-size: 24px;
+        --m-head-line-height: 30.24px;
+    
+        --light-text-font-size: 18px;
+        --light-text-line-height: 28px;
+    
+        --big-bold-text-font-size: 18px;
+        --big-bold-text-line-height: 28px;
+    
+        --bold-text-font-size: 18px;
+        --bold-text-line-height: 28px;
+
+    }
+
+    header {
+        min-width: 1110px;
+    }
+
+    .skilled-logo {
+        width: 114px;
+        height: 45px;
+    }
+    .btn-nav {
+        min-width: 167px;
+        min-height: 56px;
+    }
+
+/* HERO */
+
+    .hero-text {
+        width: 457px;
+    }
+    .hero-text > h1 {
+        width: 457px;
+        margin-bottom: 29px;
+    }
+    .hero-text > p {
+        width: 445px;
+        margin-bottom: 40px;
+    }
+    .btn-cta {
+        height: 63px;
+    }
+    .mobile-hero-img, .tablet-hero-img {
+        display: none;
+    }
+    .desktop-hero-img {
+        display: block;
+        min-width: 991.63px;
+        position: relative;
+        top: -146.13px;
+    }
+
+/* CARD SECTION */
+
+    .courseContainer {
+        min-width: var(--card-width);
+        min-height: var(--card-height);
+        margin-bottom: 64px;
+    }
+    .course {
+        padding-top: 64px;
+        padding-left: 32px;
+    }
+    .card {
+        width: var(--card-width);
+        height: var(--card-height);
+        border-radius: 15px;
+        padding-inline: var(--card-padding-left);
+        padding-bottom: 104px;
+        margin-bottom: 56px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        min-width: 1110px;
+        padding-block: 32px;
+    }
+}

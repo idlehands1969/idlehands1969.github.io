@@ -1,4 +1,58 @@
-/* RESET BROWSER */
+/* DEFINE VARIABLES */
+
+    :root {
+        --cta-gradient: linear-gradient(#FF6F48, #F02AA6);
+        --cta-gradient-hover: linear-gradient(#FF6F4888, #F02AA688);
+    
+        --foot-gradient: linear-gradient(#4851FF, #F02AA6);
+        --foot-gradient-hover: linear-gradient(#4851FF88, #F02AA688);
+
+        --bg-gradient: linear-gradient(#FFFFFFFF, #F0F1FFFF);
+    
+        --lilac: #666CA3;
+        --dark-blue: #13183F;
+        --blue-gray: #83869A;
+        --hot-pink: #F74780;
+        --pink: #FFA7c3;
+        --white: #FFFFFF;
+        --bg-white: #F0F1FF;
+        --black: #000000;
+        --off-white: #F2F2F2;
+    
+        --media-width: 375px;
+        --padding-inline: 16px;
+        --card-padding-left: 12px;
+        --course-height: 120px;
+        --card-width: 343px;
+        --card-height: 259px;
+        --img-width: 327px;
+        --img-height: 301px;
+
+        --boldest: 800;
+        --bold: 700;
+        --normal: 500;
+
+        --xl-head-font-size: 40px;
+        --xl-head-line-height: 50.4px;
+
+        --l-head-font-size: 24px;
+        --l-head-line-height: 32px;
+    
+        --m-head-font-size: 20px;
+        --m-head-line-height: 25.2px;
+    
+        --light-text-font-size: 16px;
+        --light-text-line-height: 26px;
+    
+        --big-bold-text-font-size: 18px;
+        --big-bold-text-line-height: 28px;
+    
+        --bold-text-font-size: 16px;
+        --bold-text-line-height: 28px;
+    
+    }
+
+    /* RESET BROWSER */
 
     *, *::before, *::after {
         box-sizing: border-box;
@@ -12,7 +66,6 @@
 
     html, body {
         min-height: 100vh;
-        margin-inline: auto;
         }
 
     img, picture, video, canvas, svg {
@@ -20,112 +73,118 @@
         max-width: 100%;
     }
 
-/* DEFINE VARIABLES */
-
-    :root {
-        --first-gradient: linear-gradient(#FF6F48, #F02AA6);
-        --first-gradient-hover: linear-gradient(
-        rgba(255, 111, 72, 0.5),
-        rgba(240, 42, 166, 0.5)
-        );
+/* COLOR CLASSES */
+    .dk-blue {color: var(--dark-blue);}
     
-        --second-gradient: linear-gradient(#4851FF, #F02AA6);
-        --second-gradient-hover: linear-gradient(
-        rgba(72, 81, 255, 0.5),
-        rgba(240, 42, 167, 0.5)
-        );
+    .white {color: var(--white);}
 
-        --bg-gradient: linear-gradient(#FFFFFF, #F0F1FF);
-    
-        --lilac: #666CA3;
-        --dark-blue: #13183F;
-        --blue-gray: #83869A;
-        --hot-pink: #F74780;
-        --pink: #FFA7c3;
-        --white: #FFFFFF;
-        --bg-white: #F0F1FF;
-        --black: #000000;
-        --off-white: #F2F2F2;
-    
-        --padding-inline: 16px;
-    }
+    .blue-gray {color: var(--blue-gray);}
 
-    .dk-blue {
-        color: var(--dark-blue);
-    }
-    
-    .white {
-        color: var(--white);
-    }
-
-    .blue-gray {
-        color: var(--blue-gray);
-    }
-
-    .hot-pink {
-        color: var(--hot-pink);
-        text-decoration: none;
-    }
+    .hot-pink {color: var(--hot-pink); text-decoration: none;}
 
 /* SET FONT */
 
-    body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 62.5%;
-    }
+    body {font-family: 'Plus Jakarta Sans', sans-serif; font-size: 62.5%;}
 
     .xl-head {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 50.4px;
+        font-weight: var(--boldest);
+        font-size: var(--xl-head-font-size);
+        line-height: var(--xl-head-line-height);
     }
 
     .l-head {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
+        font-weight: var(--boldest);
+        font-size: var(--l-head-font-size);
+        line-height: var(--l-head line-height);
     }
 
     .m-head {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 25.2px;
+        font-weight: var(--boldest);
+        font-size: var(--m-head-font-size);
+        line-height: var(--m-head-line-height);
     }
 
     .light-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+        font-weight: var(--normal);
+        font-size: var(--light-text-font-size);
+        line-height: var(--light-text-line-height);
     }
 
     .big-bold-text {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+        font-weight: var(--bold);
+        font-size: var(--big-bold-text-font-size);
+        line-height: var(--big-bold-text-line-height);
     }
 
     .bold-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 28px;
+        font-weight: var(--bold);
+        font-size: var(--bold-text-font-size);
+        line-height: var(--bold-text-line-height);
     }
 
 /* GENERAL STYLES */
+
+/* ********** BACKGROUNDS ********** */
+/* ********** BACKGROUNDS ********** */
+body {
+    background-color: antiquewhite;
+}
+header {
+    background-color: #8fcfe0;
+}
+.header-container {
+    background-color: #c23c8e;
+}
+.hero-container {
+    background-color: #83869A89;
+
+}
+.hero-text {
+    background-color: rgb(146, 72, 72);
+}
+.card-container {
+    background-color: blue;
+}
+.course {
+    background-color: #dbd067;
+}
+h1 {
+    background-color: #d9f0d3;
+}
+h2 {
+    background-color: #e9edf7;
+}
+h3 {
+    background-color: #f7dacb;
+}
+p {
+        background-color: #cbbff7;
+    }
+.cta {
+    background-color: #7c48bc;
+}
+
+/* ********** BACKGROUNDS ********** */
+/* ********** BACKGROUNDS ********** */
     body {
-        min-width: 375px;
+        width: var(--width);
         min-height: 100vh;
+        margin-inline: auto;
     }
 
 /* HEADER */
 
     header {
+        width: var(--media-width);
+        margin-inline: auto;
+    }
+
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 375px;
         padding-inline: var(--padding-inline);
-        margin: 0 auto;
-        padding-block: 36px 38px;
+        padding-top: 16px;
     }
 
     .skilled-logo {
@@ -136,8 +195,8 @@
     .btn-nav {
         background: var(--dark-blue);
         color: var(--white);
-        min-width: 140px;
-        min-height: 48px;
+        width: 140px;
+        height: 48px;
         border-radius: 24px;
         border-color: transparent;
     }
@@ -149,35 +208,29 @@
 /* HERO */
 
     .hero-container {
+        width: var(--media-width);
         padding-inline: var(--padding-inline);
-        margin-inline: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding-right: 0px;
-        min-width: 375px;
+        margin-inline: auto;
     }
 
     .hero-text {
-        display: block;
-        width: 343;
+        margin-top: 38px;
+        margin-inline: auto;
+        width: var(--card-width);
     }
 
     .hero-text > h1 {
-        width: 343px;
         margin-bottom: 26px;
-        margin-inline: auto;
-        text-align: left;
         color: var(--dark-blue);
         -webkit-text-stroke: 1px #000000;
     }
 
     .hero-text > p {
-        width: 343px;
         margin-bottom: 24px;
-        margin-inline: auto;
-        text-align: left;
         color: var(--blue-gray);
     }
 
@@ -185,46 +238,38 @@
         width: 167px;
         height: 56px;
         border-radius: 28px;
-        background-image: var(--first-gradient);
+        background-image: var(--cta-gradient);
         color: var(--white);
         margin-bottom: 46px;
-        margin-inline: auto;
         border-color: transparent;
     }
 
     .btn-cta:hover {
-        background-image: linear-gradient(rgba(255, 111, 72, 0.5), rgba(240, 42, 166, 0.5)
-        );
+        background-image: var(--cta-gradient-hover);
     }
 
     .mobile-hero-img {
-        min-width: 327px;
-        margin-inline: auto;
+        width: var(--img-width);
     }
 
-    .tablet-hero-img, .desktop-hero-img {
-        display: none;
-    }
+    .tablet-hero-img, .desktop-hero-img {display: none;}
 
 /* CARD SECTION */
 
     .card-container {
+        margin-inline: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: var(--bg-white);
         padding-inline: var(--padding-inline);
-        margin-inline: auto;
     }
 
     .courseContainer {
-        flex-basis: 343px;
+        width: var(--card-width);
         height: 120px;
         margin-inline: auto;
         margin-bottom: 40px;
-        border-radius: 12px;
-        background-image: linear-gradient(#FF6F48, #F02AA6);
+        border-radius: 5px;
+        background-image: var(--cta-gradient);
         padding-top: 24px;
         padding-left: 28px;
     }
@@ -232,16 +277,14 @@
     .course {
         width: 286px;
         height: 64px;
-        color: var(--white);
     }
 
     .card {
-        flex-basis: 343px;
-        height: 259px;
+        width: var(--card-width);
+        height: var(--card-height);
         margin-inline: auto;
         margin-bottom: 40px;
         background-color: var(--white);
-        border-radius: 10px;
         padding-inline: var(--padding-inline);
     }
 
@@ -252,31 +295,30 @@
     .icon {
         min-width: 56px;
         min-height: 56px;
-        padding-left: 12px;
+        padding-left: var(--card-padding-left);
         position: relative;
         top: -24px;
     }
 
     .cardHead {
         margin-bottom: 16px;
-        padding-left: 12px;
+        padding-left: var(--card-padding-left);
         color: var(--dark-blue);
     }
 
     .cardText {
         margin-bottom: 24px;
-        padding-left: 12px;
+        padding-left: var(--card-padding-left);
         color: var(--blue-gray);
     }
 
     .cta {
-        padding-left: 12px;
+        padding-left: var(--card-padding-left);
     }
 
 /* FOOTER */
 
     footer {
-        min-width: 375px;
         height: 120px;
         background-color: var(--dark-blue);
     }
@@ -285,13 +327,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 343px;
         padding-inline: var(--padding-inline);
-        margin: 0 auto;
+        padding-block: 36px;
     }
 
     .btn-foot {
-        background-image: linear-gradient(#4851FF, #F02AA6);
+        background-image: var(--foot-gradient);
         width: 140px;
         height: 48px;
         border-radius: 24px;
@@ -299,253 +340,5 @@
     }
 
     .btn-foot:hover {
-        background-image: linear-gradient(
-            rgba(72, 81, 255, 0.5),
-            rgba(240, 42, 167, 0.5)
-            )
+        background-image: var(--foot-gradient-hover);
     }
-
-/* MEDIA QUERY 766PX */
-
-/*
-
-
-
-@media (min-width: 766px) {
-    :root {
-        --padding-inline: 32px;
-    }
-    .xl-head {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 50.4px;
-    }
-    
-    .l-head {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 32px;
-    }
-    
-    .m-head {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 25.2px;
-    }
-    
-    .light-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-    }
-    
-    .big-bold-text {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-    }
-    
-    .bold-text {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 28px;
-    }
-    
-/* GENERAL STYLES */
-
-/*
-
-
-
-    body {
-        min-width: 766px;
-    }
-    header {
-        min-width: 766px;
-        padding-block: 24px 0;
-    }
-
-/* HERO */
-
-/*
-
-
-
-    .hero-container {
-        min-width: 766px;
-        flex-direction: row;
-        padding-right: 0px;
-    }
-    .hero-text {
-        flex-basis: 398px;
-    }
-    .hero-text > h1 {
-        width: 326px;
-        margin-bottom: 25px;
-    }
-    .hero-text > p {
-        width: 398px;
-    }
-    .hero-image {
-        overflow: hidden;
-    }
-    .mobile-hero-img, .desktop-hero-img {
-        display: none;
-    }
-    .tablet-hero-img {
-        display: block;
-        min-width: 640px;
-        position: relative;
-        top: -92px;
-    }
-
-/* CARD SECTION */
-
-/*
-
-
-
-    .card-container {
-        min-width: 689px;
-        flex-direction: row;
-    }
-    .courseContainer {
-        min-width: 339px;
-        min-height: 259px;
-        padding-top: 56px;
-        padding-left: 32px;
-    }
-    .course {
-        width: 286px;
-        height: 64px;
-        color: var(--white);
-    }
-    .card {
-        min-width: 340px;
-        height: 259px;
-        margin-bottom: 48px;
-    }
-    .animation {
-        flex-basis: 340px;
-        height: 259px;
-    }
-    .business {
-        margin-bottom: 86px;
-    }
-
-
-}
-
-/* MEDIA QUERY 1100PX */
-/*
-@media (min-width: 1100px) {
-    :root {
-        --padding-inline: 165px;
-    }
-    .xl-head {
-        font-size: 56px;
-        line-height: 70.56px;
-    }
-    .l-head {
-        font-size: 32px;
-        line-height: 40px;
-    }
-    .m-head {
-        font-size: 24px;
-        line-height: 30.24px;
-    }
-    .light-text {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .bold-text {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-/* GENERAL STYLES */
-
-/*    body {
-        min-width: 1440px;
-    }
-    header {
-        position: relative;
-        top: 0px;
-        min-width: 1440px;
-        padding-block: 24px 0;
-    }
-    .skilled-logo {
-        width: 111.17px;
-        height: 27.68px;
-    }
-    .btn-nav {
-        min-width: 167px;
-        min-height: 56px;
-    }
-
-/* HERO */
-/*    .hero-container {
-        min-width: 1100px;
-    }
-    .hero-text {
-        flex-basis: 457px;
-    }
-    .hero-text > h1 {
-        width: 445px;
-        margin-bottom: 29px;
-    }
-    .hero-text > p {
-        width: 398px;
-        margin-bottom: 40px;
-    }
-    .hero-image {
-        overflow: hidden;
-    }
-    .mobile-hero-img, .tablet-hero-img {
-        display: none;
-    }
-    .desktop-hero-img {
-        display: block;
-        min-width: 991.63px;
-        position: relative;
-        top: -146.13px;
-        z-index: 1;
-    }
-    .btn-cta {
-        min-width: 167px;
-        min-height: 63px;
-    }
-    .card-container {
-        min-width: 1100px;
-    }
-    .courseContainer {
-        min-width: 350px;
-        min-height: 322px;
-    }
-    .course {
-        padding-top: 64px;
-        padding-left: 32px;
-    }
-    .card {
-        min-width: 340px;
-        height: 259px;
-        margin-bottom: 48px;
-    }
-    .animation {
-        flex-basis: 340px;
-        height: 259px;
-    }
-    .business {
-        margin-bottom: 86px;
-    }
-
-/* FOOTER */
-
-/*    footer {
-        min-width: 766px;
-        padding-top: 0px;
-    }
-    .footer-container {
-        min-width: 766px;
-    }
-}
