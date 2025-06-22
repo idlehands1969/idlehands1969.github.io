@@ -80,3 +80,10 @@ textarea, select {
 	border-radius: 10px;
 	padding: 0 1rem;
 }
+
+h1,
+legend {
+  font-family: "Julee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
