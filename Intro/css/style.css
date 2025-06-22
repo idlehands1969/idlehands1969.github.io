@@ -1,0 +1,11 @@
+body {
+    background-color: #4e004e;
+}
+
+div {
+    background-color: #ff6cff;
+    color: #4e004e;
+    width: fit-content;
+    margin: 10rem auto;
+    padding: 1rem 2rem;
+}
